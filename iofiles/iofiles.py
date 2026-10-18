@@ -20,6 +20,7 @@ print(s2)
 
 #  f.read(size)  size是可选参数，为负时读取整个文件
 # readlines()将内容转为列表，每行为一个元素
+# 只返回字符串
 
 #seek(offset, whence) 改变文件对象的位置
 # 通过向参考点添加 offset 计算位置；参考点由 whence 参数指定
