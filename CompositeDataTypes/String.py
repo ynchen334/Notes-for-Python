@@ -75,6 +75,3 @@ s7= ""
 seq = ("r", "u", "n", "o", "o", "b") # 字符串序列
 print (s6.join( seq ))   #r-u-n-o-o-b
 print (s7.join( seq ))   #runoob
-
-
-#列表list
