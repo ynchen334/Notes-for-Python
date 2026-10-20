@@ -32,7 +32,7 @@ print(p2)
 
 #返回上级目录，属性没有括号
 #只根据输入的字符串来，如果是单个的文件名就返回".""
-print(f"parent:{p1.parent}")     #上层目录
+print(f"parent:{p1.parent}")     
 print(list(p1.parents))    #返回一个列表，包含所有层级目录
 
 #获取当前工作路径pwd
@@ -100,8 +100,8 @@ file2.rename("data/new_input.txt")
 
 #删除文件
 obj_new_input = Path("./data/new_input.txt")
-print(obj_new_input.resolve())     #相当于os.remove()
-obj_new_input.unlink()
+print(obj_new_input.resolve())          #将相对路径补全为绝对路径
+obj_new_input.unlink()                  #相当于os.remove()
 
 #删除目录
 dir_obj = Path("./some")
@@ -122,7 +122,7 @@ print("-" * 10)
 
 #查找当前路径下内容（非递归）
 for item in base_dir.iterdir():
-    print(item, type(item))  #每个item是一个Path类对象
+    print(item, type(item))       #每个item是一个Path类对象
 
 print("-" * 10)
 #查找当前目录下某格式文件（非递归）
@@ -137,7 +137,7 @@ for py in base_dir.rglob("*.py"):
 
 #文件的写操作
 file_Path = Path("pi1.txt")  
-file_Path.write_text("abc\nhello world\n你好")  #覆盖，没有自动创建，存在不报错
+file_Path.write_text("abc\nhello world\n你好")        #覆盖，没有自动创建，存在不报错
 
 #文件的读操作
 res = file_Path.read_text(encoding="utf-8")
