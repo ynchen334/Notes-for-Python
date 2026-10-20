@@ -56,7 +56,7 @@ for a,b,c in ls2:
 envs = os.environ.get("PATH")
 #print(envs)
 print(type(envs))
-#列表化环境变量
+#列表化环境变量 
 path_envs = envs.split(":")
 for cho in path_envs:
     print(cho)
