@@ -1,0 +1,9 @@
+{
+  "name": "admin",
+  "age": 25,
+  "is_student": false,
+  "address": {
+    "city": "北京",
+    "district": "朝阳区"
+  }
+}
