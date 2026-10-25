@@ -1,0 +1,2 @@
+2026/10/25 17:29:38 - ERROR - __main__ - logging_test.py:114 - This is an ERROR log.
+2026/10/25 17:29:38 - CRITICAL - __main__ - logging_test.py:115 - This is a CRITICAL log.
